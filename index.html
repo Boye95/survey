@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - SURVEY FORM</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<div id="main-page">
+  <div id="header">
+    <h1 id="title">OPEN AIR CINEMA SURVEY FORM</h1>
+    <p id="description">Thanks for participating in helping us grow.</p>
+  </div>
+  
+  <form action="#" id="survey-form">
+    <div class="form-class">
+    <label for="name" id="name-label">
+       Your name
+    </label>
+    <input type="text" id="name" name="name" class="input-type" placeholder="Write your full name here..." required>
+      </div>
+    
+    <div class="form-class">
+    <label for="email" id="email-label">
+      Your Email
+    </label>
+    <input type="email" id="email" name="email" class="input-type" placeholder="Write your email here..." required>
+    </div>
+    
+      <div class="form-class">
+      <label for="number" id="number-label">
+      Age
+    </label>
+    <input type="number" id="number" name="number"  min="15" max="99" class="input-type" placeholder="Your age..." required>
+      </div>
+      
+    <div class="form-class">
+     <label for="dropdown">
+      What genre do you enjoy the most?
+    </label>
+    <select name="genre" class="input-type" id="dropdown" required>
+      <option disabled selected value>Select your favourite genre</option>
+      <option value="romance">Romance</option>
+      <option value="comedy">Comedy</option>
+      <option value="romcom">Romantic-comedy</option>
+      <option value="adventure">Adventure</option>
+      <option value="horror">Horror</option>
+      <option value="war">War</option>
+      <option value="fantasy">Fantasy</option>
+    </select>
+      </div>
+      
+       <div class="form-class">
+         <p>Would you attend our next show?</p>
+      <label>
+    <input type="radio" id="radio" name="next-show" value="yes" checked>Yes</label>
+         <label>
+    <input type="radio" id="radio" name="next-show" value="maybe">Maybe</label>
+         <label>
+    <input type="radio" id="radio" value="not-sure" name="next-show" >Not Sure</label>
+      </div>
+      
+       <div class="form-class">
+         <p>What would you like to see improve? <span>(check all that applies)</span></p>
+         
+         <label for="quality">
+           <input type="checkbox" name="improve" id="quality" class="check" value="quality">Quality of Movies
+         </label>
+         
+         <label for="lighting">
+           <input type="checkbox" name="improve" id="lighting"  value="lighting" class="check">Lighting
+         </label>
+         
+         <label for="diverse">
+           <input type="checkbox" name="improve" value="diverse" id="diverse" class="check">More diverse genres
+         </label>
+         
+         <label for="location">
+           <input type="checkbox" name="improve" id="location" class="check" value="location">Better Locations
+         </label>
+      </div>
+      
+      <div class="form-class">
+        <label for="textarea">Any comments or suggestion?</label>
+        <textarea name="comments" id="textarea" class="input-textarea input-type" placeholder="Write your comment here..."></textarea>
+      </div>
+      
+      <div class="form-class class-form">
+        <button type="submit" id="submit" class="submit-button input-type">Submit</button>
+      </div>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
